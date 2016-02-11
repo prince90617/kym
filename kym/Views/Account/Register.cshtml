@@ -1,0 +1,61 @@
+﻿@model kym.Models.RegisterModel
+@{
+    Layout = null;
+}
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>Create a new account.</h2>
+</hgroup>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    
+    <fieldset>
+        <legend>Registration Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(model => model.FirstName)
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.LastName)
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Gender)
+                @Html.EditorFor(model => model.Gender)
+                @Html.ValidationMessageFor(model => model.Gender)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.EmailID)
+                @Html.EditorFor(model => model.EmailID)
+                @Html.ValidationMessageFor(model => model.EmailID)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.MobileNumber)
+                @Html.EditorFor(model => model.MobileNumber)
+                @Html.ValidationMessageFor(model => model.MobileNumber)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.BusinessTypeID)
+                @Html.EditorFor(model => model.BusinessTypeID)
+                @Html.ValidationMessageFor(model => model.BusinessTypeID)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Password)
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.ConfirmPassword)
+                @Html.EditorFor(model => model.ConfirmPassword)
+                @Html.ValidationMessageFor(model => model.ConfirmPassword)
+            </li>
+            <input type="submit" value="Register" />
+    </fieldset>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

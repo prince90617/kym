@@ -1,0 +1,19 @@
+﻿@if (User.Identity.Name!="")
+{
+    <text>
+      @*  Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!*@
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+      
+              <input type="submit" id="logoff" value="LogOff" />
+         
+         }
+    </text>
+}
+else
+{
+    <ul>
+        <li><a class="_btn cboxElement" href="/Account/Register" id="registerLink">Register</a>
+       @* @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink",@class="_btn" })*@</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

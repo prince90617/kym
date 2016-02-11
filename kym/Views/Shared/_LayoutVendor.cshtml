@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewBag.Title - SM</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/commoncss")
+</head>
+<body >
+    <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("SM", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Vendor")</li>
+                            <li>@Html.ActionLink("Catalogue", "Catalogue", "Vendor")</li>
+                            <li>@Html.ActionLink("Sale", "Sale", "Vendor")</li>
+                            <li>@Html.ActionLink("Purchase", "Purchase", "Vendor")</li>
+                            <li>@Html.ActionLink("Sale", "Sale", "Vendor")</li>
+                            <li>@Html.ActionLink("Dashboard", "Dashboard", "Vendor")</li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+    <div id="body">
+        @* @RenderSection("featured", required: false)*@
+        <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+    </div>
+    <footer>
+              <div class="content-wrapper">
+              <div class="float-left">
+                    <p>&copy; Copyright ABC Company. All Rights Reserved.</p>
+                </div>
+                 
+            </div>
+           
+        </footer>
+    @Scripts.Render("~/Scripts/commonscripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

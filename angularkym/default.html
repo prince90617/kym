@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="loggedinapp">
+<head>
+    <meta charset="utf-8" />
+    <title>Know Your Market- logged in</title>
+    <link rel="stylesheet" href="app-content/bootstrap.min.css" />
+    <link href="app-content/app.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <div class="credits text-center">
+        <p>
+            <a href="#">KYM- Know You Market</a>
+        </p>
+        <p>
+            <a href="http://kamaldewal.com">kamaldewal.com</a>
+        </p>
+    </div>
+
+    <script src="scripts/jquery-2.0.3.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-cookies.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <script src="app-services/user.service.js"></script> 
+
+    <script src="home/home.controller.js"></script>
+
+</body>
+</html>
