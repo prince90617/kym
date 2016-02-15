@@ -10,7 +10,7 @@ namespace DatabaseService.Queries.EntityFramework
     {
         public static DatabaseService.Models.RefreshToken GetRefreshToken(string HashedToken)
          {
-
+            try{
              using (var ctx = new SMContext())
              {
                  var refreshToken = from rft in ctx.RefreshTokens
@@ -19,6 +19,12 @@ namespace DatabaseService.Queries.EntityFramework
 
                  return refreshToken.FirstOrDefault();
              }
+            }
+            catch (Exception ex)
+            {
+                BaseClass.logger.Error("Database Query GetRefreshToken: ",ex);
+                return null;
+            }
              
          }
     }

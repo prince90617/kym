@@ -44,3 +44,7 @@ E:\personal\GIT\kym\DatabaseService.Queries\bin\Debug\MvcExtensions.xml
 E:\personal\GIT\kym\DatabaseService.Queries\obj\Debug\DatabaseService.Queries.csprojResolveAssemblyReference.cache
 E:\personal\GIT\kym\DatabaseService.Queries\obj\Debug\DatabaseService.Queries.dll
 E:\personal\GIT\kym\DatabaseService.Queries\obj\Debug\DatabaseService.Queries.pdb
+E:\personal\GIT\kym\DatabaseService.Queries\bin\Debug\log4net.dll
+E:\personal\GIT\kym\DatabaseService.Queries\bin\Debug\Ninject.dll
+E:\personal\GIT\kym\DatabaseService.Queries\bin\Debug\log4net.xml
+E:\personal\GIT\kym\DatabaseService.Queries\bin\Debug\Ninject.xml

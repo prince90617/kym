@@ -6,6 +6,9 @@ using AutoMapper;
 
 namespace DatabaseService.Queries.Mongodb
 {
+   
+
+
     [BsonIgnoreExtraElements]
     public class Client
     {
