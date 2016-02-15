@@ -7,7 +7,7 @@ namespace DatabaseServiceWebservice.Controllers {
     public dynamic Authenticate([FromBody] dynamic inputs) {
         
         string username = inputs.Username;
-        logger.Debug("Checking authentication for user: " + username);
+        logger.Debug("Checking authentication for user : " + username);
         return AuthenticateUserQuery.AuthenticateUser(username);
     }
 
