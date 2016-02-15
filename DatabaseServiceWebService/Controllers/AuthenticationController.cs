@@ -1,5 +1,5 @@
 ﻿using System.Web.Http;
-using DatabaseService.Queries.EntityFramework;
+using DatabaseService.Queries.Mongodb;
 
 namespace DatabaseServiceWebservice.Controllers {
   public class AuthenticationController : BaseController {

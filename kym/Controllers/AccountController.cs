@@ -32,8 +32,10 @@ namespace kym.Controllers
         {
             ViewBag.ReturnUrl = returnUrl;
             ViewBag.Title = "Log in";
-
-            return View();
+            LoginModel model = new LoginModel();
+            model.UserName = "admin@admin.com";
+            model.Password = "admin";
+            return View(model);
         }
 
         //

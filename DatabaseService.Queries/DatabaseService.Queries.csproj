@@ -65,13 +65,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityFramework\AuthenticateUserQuery.cs" />
+    <Compile Include="Mongodb\DBContext\DBContext.cs" />
     <Compile Include="EntityFramework\DeleteRefreshTokenQuery.cs" />
     <Compile Include="EntityFramework\GetRefreshTokenQuery.cs" />
     <Compile Include="EntityFramework\DBContext\SMContext.cs" />
     <Compile Include="EntityFramework\GetClientQuery.cs" />
     <Compile Include="EntityFramework\SaveRefreshTokenQuery.cs" />
     <Compile Include="Mongodb\AuthenticateUserQuery.cs" />
+    <Compile Include="Mongodb\DeleteRefreshTokenQuery.cs" />
+    <Compile Include="Mongodb\GetClientQuery.cs" />
+    <Compile Include="Mongodb\GetRefreshTokenQuery.cs" />
     <Compile Include="Mongodb\MongodbClient.cs" />
+    <Compile Include="Mongodb\SaveRefreshTokenQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

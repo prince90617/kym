@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
@@ -11,14 +12,15 @@ namespace DatabaseService.Queries.Mongodb
 {
     public static class AuthenticateUserQuery
     {
-        public static async Task<DatabaseService.Models.User> AuthenticateUser(string username)
+        public static DatabaseService.Models.User AuthenticateUser(string username)
         {
+            Mapper.CreateMap<DatabaseService.Models.User, User>().ForMember(src => src._id, option => option.Ignore()).ReverseMap();
             var _database = MongodbClient.GetDatabaseClient();
             var collection = _database.GetCollection<BsonDocument>("user");
-            var filter = Builders<BsonDocument>.Filter.Eq("borough", "Manhattan");
-            var doc = await collection.Find(filter).ToListAsync();
-            var result = BsonSerializer.Deserialize<DatabaseService.Models.User>(doc[0]);
-            return result;
+            var filter = Builders<BsonDocument>.Filter.Eq("Username", username);
+            var doc = collection.Find(filter).ToList();
+            var result = BsonSerializer.Deserialize<User>(doc[0]);
+            return Mapper.Map<DatabaseService.Models.User>(result);
         }
     }
 
