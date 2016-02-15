@@ -150,3 +150,4 @@ E:\personal\GIT\kym\smapi\bin\BCrypt.Net.xml
 E:\personal\GIT\kym\smapi\obj\Debug\smapi.csprojResolveAssemblyReference.cache
 E:\personal\GIT\kym\smapi\obj\Debug\smapi.dll
 E:\personal\GIT\kym\smapi\obj\Debug\smapi.pdb
+E:\personal\GIT\kym\smapi\bin\smapi.dll.config

@@ -94,3 +94,4 @@ E:\personal\GIT\kym\DatabaseServiceWebService\obj\Debug\DatabaseServiceWebServic
 E:\personal\GIT\kym\DatabaseServiceWebService\obj\Debug\DatabaseServiceWebService.pdb
 E:\personal\GIT\kym\DatabaseServiceWebService\bin\AutoMapper.dll
 E:\personal\GIT\kym\DatabaseServiceWebService\bin\AutoMapper.xml
+E:\personal\GIT\kym\DatabaseServiceWebService\bin\DatabaseServiceWebService.dll.config

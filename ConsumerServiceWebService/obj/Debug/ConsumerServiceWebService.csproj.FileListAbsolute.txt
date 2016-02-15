@@ -150,3 +150,6 @@ E:\personal\GIT\kym\ConsumerServiceWebService\bin\BCrypt.Net.xml
 E:\personal\GIT\kym\ConsumerServiceWebService\obj\Debug\ConsumerServiceWebService.csprojResolveAssemblyReference.cache
 E:\personal\GIT\kym\ConsumerServiceWebService\obj\Debug\ConsumerServiceWebService.dll
 E:\personal\GIT\kym\ConsumerServiceWebService\obj\Debug\ConsumerServiceWebService.pdb
+E:\personal\GIT\kym\ConsumerServiceWebService\bin\ConsumerServiceWebService.dll.config
+E:\personal\GIT\kym\ConsumerServiceWebService\bin\EntityFramework.dll
+E:\personal\GIT\kym\ConsumerServiceWebService\bin\EntityFramework.xml
