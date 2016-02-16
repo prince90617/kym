@@ -1,0 +1,77 @@
+﻿@model kym.Models.UserViewModel
+ 
+@{
+ ViewBag.Title = kym.Resource.Title;
+}
+<div class="row">
+ <div class="col-md-8">
+ <h2>@kym.Resource.Title</h2>
+ </div>
+ <div class="col-md-4">
+ @using (Html.BeginForm("ChangeCulture", "Home"))
+ {
+ <p>
+ @kym.Resource.SelectLanguage : @Html.DropDownList("ddlCulture", new SelectList(new[]
+ {
+ new{value="en",text=kym.Resource.English},
+ new{value="hi",text=kym.Resource.Hindi}
+ }, "value", "text", Session["CurrentCulture"]), new { onchange = "this.form.submit();" })
+ </p>
+ }
+ </div>
+</div>
+<br />
+@using (Html.BeginForm("Resource", "Home"))
+{
+ @Html.AntiForgeryToken()
+ 
+ <div class="form-horizontal">
+ 
+ @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+ <div class="form-group">
+ @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+ <div class="col-md-10">
+ @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+ @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+ </div>
+ </div>
+ 
+ <div class="form-group">
+ @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+ <div class="col-md-10">
+ @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+ @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+ </div>
+ </div>
+ 
+ <div class="form-group">
+ @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+ <div class="col-md-10">
+ @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+ @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+ </div>
+ </div>
+ 
+ <div class="form-group">
+ @Html.LabelFor(m => m.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+ <div class="col-md-10">
+ @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+ @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+ </div>
+ </div>
+ 
+ <div class="form-group">
+ @Html.LabelFor(m => m.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+ <div class="col-md-10">
+ @Html.TextAreaFor(m => m.Address, new { @class = "form-control" })
+ @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+ </div>
+ </div>
+ 
+ <div class="form-group">
+ <div class="col-md-offset-2 col-md-10">
+ <input type="submit" value="@kym.Resource.Save" class="btn btn-default" />
+ </div>
+ </div>
+ </div>
+}

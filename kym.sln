@@ -1,0 +1,132 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kym1", "kym\kym1.csproj", "{2AE325D6-9180-4806-BDE5-40695D784784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smapi", "smapi\smapi.csproj", "{37E532CC-688C-4E8C-A9C8-09EECD0569F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smlib", "smlib\smlib.csproj", "{7A29255E-7CCA-4A43-9D1D-D66DF4847443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseService.SDK", "DatabaseService.SDK\DatabaseService.SDK.csproj", "{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseService.Models", "DatabaseService.Models\DatabaseService.Models.csproj", "{AF50103A-C841-439D-8167-35348A828777}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedLibraries", "SharedLibraries", "{16BE8C7A-CAEB-42A2-B1CB-D380D60A439D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{DD822624-5E67-407B-A67F-51140BF077E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{817C0985-75EC-44CA-A967-7D80A856D1F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseServiceWebService", "DatabaseServiceWebService\DatabaseServiceWebService.csproj", "{B986E352-6994-4F73-9CBA-0CD3980E37E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseService.Queries", "DatabaseService.Queries\DatabaseService.Queries.csproj", "{F007D9D4-7F34-45C6-92F1-D5A9B84921D7}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "angularkym", "http://localhost:37298", "{4E1630B1-4FC4-407D-8CD4-EE62C3110963}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_37298"
+		Debug.AspNetCompiler.PhysicalPath = "angularkym\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_37298\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_37298"
+		Release.AspNetCompiler.PhysicalPath = "angularkym\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_37298\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "angularkym\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Comsumerkym", "http://localhost:60933", "{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60933"
+		Debug.AspNetCompiler.PhysicalPath = "Comsumerkym\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60933\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60933"
+		Release.AspNetCompiler.PhysicalPath = "Comsumerkym\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60933\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Comsumerkym\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerServiceWebService", "ConsumerServiceWebService\ConsumerServiceWebService.csproj", "{E6000DA5-6510-4781-896E-012B0AB48273}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE325D6-9180-4806-BDE5-40695D784784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE325D6-9180-4806-BDE5-40695D784784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE325D6-9180-4806-BDE5-40695D784784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE325D6-9180-4806-BDE5-40695D784784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E532CC-688C-4E8C-A9C8-09EECD0569F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E532CC-688C-4E8C-A9C8-09EECD0569F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E532CC-688C-4E8C-A9C8-09EECD0569F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E532CC-688C-4E8C-A9C8-09EECD0569F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A29255E-7CCA-4A43-9D1D-D66DF4847443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A29255E-7CCA-4A43-9D1D-D66DF4847443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A29255E-7CCA-4A43-9D1D-D66DF4847443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A29255E-7CCA-4A43-9D1D-D66DF4847443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF50103A-C841-439D-8167-35348A828777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF50103A-C841-439D-8167-35348A828777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF50103A-C841-439D-8167-35348A828777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF50103A-C841-439D-8167-35348A828777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B986E352-6994-4F73-9CBA-0CD3980E37E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B986E352-6994-4F73-9CBA-0CD3980E37E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B986E352-6994-4F73-9CBA-0CD3980E37E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B986E352-6994-4F73-9CBA-0CD3980E37E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F007D9D4-7F34-45C6-92F1-D5A9B84921D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F007D9D4-7F34-45C6-92F1-D5A9B84921D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F007D9D4-7F34-45C6-92F1-D5A9B84921D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F007D9D4-7F34-45C6-92F1-D5A9B84921D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1630B1-4FC4-407D-8CD4-EE62C3110963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1630B1-4FC4-407D-8CD4-EE62C3110963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1630B1-4FC4-407D-8CD4-EE62C3110963}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1630B1-4FC4-407D-8CD4-EE62C3110963}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E6000DA5-6510-4781-896E-012B0AB48273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6000DA5-6510-4781-896E-012B0AB48273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6000DA5-6510-4781-896E-012B0AB48273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6000DA5-6510-4781-896E-012B0AB48273}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2AE325D6-9180-4806-BDE5-40695D784784} = {DD822624-5E67-407B-A67F-51140BF077E6}
+		{4E1630B1-4FC4-407D-8CD4-EE62C3110963} = {DD822624-5E67-407B-A67F-51140BF077E6}
+		{8649FCDC-B01E-4BB2-AB6E-E6BA17F40639} = {DD822624-5E67-407B-A67F-51140BF077E6}
+		{37E532CC-688C-4E8C-A9C8-09EECD0569F8} = {817C0985-75EC-44CA-A967-7D80A856D1F9}
+		{B986E352-6994-4F73-9CBA-0CD3980E37E9} = {817C0985-75EC-44CA-A967-7D80A856D1F9}
+		{E6000DA5-6510-4781-896E-012B0AB48273} = {817C0985-75EC-44CA-A967-7D80A856D1F9}
+		{65C364F8-8DA2-4A30-AA9C-4BF679C55E2B} = {16BE8C7A-CAEB-42A2-B1CB-D380D60A439D}
+		{AF50103A-C841-439D-8167-35348A828777} = {16BE8C7A-CAEB-42A2-B1CB-D380D60A439D}
+		{7A29255E-7CCA-4A43-9D1D-D66DF4847443} = {16BE8C7A-CAEB-42A2-B1CB-D380D60A439D}
+		{F007D9D4-7F34-45C6-92F1-D5A9B84921D7} = {16BE8C7A-CAEB-42A2-B1CB-D380D60A439D}
+	EndGlobalSection
+EndGlobal
