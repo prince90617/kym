@@ -226,3 +226,7 @@ venv
 
 # Xcode
 *.framework/
+*.dll
+ConsumerServiceWebService/bin/ConsumerServiceWebService.dll
+*.dll
+*.dll
