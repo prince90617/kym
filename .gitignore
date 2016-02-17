@@ -230,3 +230,6 @@ venv
 ConsumerServiceWebService/bin/ConsumerServiceWebService.dll
 *.dll
 *.dll
+*.dll
+*.pdb
+*.cache
