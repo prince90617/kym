@@ -10,12 +10,12 @@
 	
     function config($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/', {
+            //.when('/', {
                 
-                //controller: 'HomeController',
-                //templateUrl: 'home/home.view.html',
-                //controllerAs: 'vm'
-            })
+            //    controller: 'HomeController',
+            //    templateUrl: 'home/home.view.html',
+            //    controllerAs: 'vm'
+            //})
 
             .when('/login', {
                 controller: 'LoginController',
