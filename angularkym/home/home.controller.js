@@ -2,17 +2,17 @@
     'use strict';
 
     angular
-        .module('app')
+        .module('loggedinapp')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$rootScope'];
-    function HomeController(UserService, $rootScope) {
+    HomeController.$inject = [ '$rootScope', '$cookieStore'];
+    function HomeController( $rootScope,$cookieStore) {
         var vm = this;
 
         vm.user = null;
        // vm.allUsers = [];
        // vm.deleteUser = deleteUser;
-
+        
         initController();
 
         function initController() {
@@ -22,7 +22,7 @@
         }
 
         function loadCurrentUser() {
-         
+            $rootScope.globals = $cookieStore.get('globals') || {};
             vm.user = $rootScope.globals.currentUser;
           //  UserService.GetByUsername($rootScope.globals.currentUser.username)
           //      .then(function (user) {
